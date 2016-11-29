@@ -1,3 +1,9 @@
+"""
+Jackson Garcez
+Vinicius Carvalho
+"""
+
+
 import random, sys, pygame
 from pygame.locals import *
 
