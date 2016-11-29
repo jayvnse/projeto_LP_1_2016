@@ -55,7 +55,6 @@ def main():
     Font = pygame.font.SysFont("arial", 30)
     FontBig = pygame.font.SysFont("arial", 60)
     
-    # create buttons
     HELP_SURF = Font.render("SOBRE", True, WHITE)
     HELP_RECT = HELP_SURF.get_rect()
     HELP_RECT.topleft = (windowWidth - 180, windowHeight - 350)
@@ -137,10 +136,6 @@ def run_game():
 
 
 def generate_default_tiles(default_value):
-    '''
-    returns list of 10 x 10 tiles with tuples ('shipName',boolShot) set to 
-    (default_value)
-    '''
     default_tiles = [[default_value]*tabuleiroHeight for i in xrange(tabuleiroWidth)]
     
     return default_tiles
@@ -218,8 +213,6 @@ def draw_board(board, revealed):
         pygame.draw.line(DISPLAYSURF, DARKGRAY, (margemX + tamanhoMarcador, y + 
             margemY + tamanhoMarcador), (windowWidth - (displayWidth + tamanhoMarcador *
             2), y + margemY + tamanhoMarcador))
-
-
 
 
 
